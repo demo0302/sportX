@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sportX - Connect and Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div><img class="logox" src="./human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.webp"></div>
+        <div class="logo">
+            <h1>sportX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nearby Stadiums</a></li>
+                <li><a href="#scheduling">Scheduling</a></li>
+                <li><a href="#team">Team Formation</a></li>
+                <li><a href="#chat">Chat</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+            <button id="user"></button>
+        </div>
+    </header>
+
+    
+    <!-- Hero Section -->
+     
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Find Nearby Sports Enthusiasts</h2>
+            <p>Connect, play, and enjoy your favorite sport with others near you.</p>
+            <button class="cta">Get Started</button>
+        </div>
+    </section>
+ <!-- Matchmaking Section -->
+ <section id="matchmaking">
+  <h2 class="match">Game Connect!!!!</h2>
+  <p  style="display: flex; justify-content: center; font-size: 15px; color:rgb(38, 2, 80); font-weight: bold; margin-bottom: 30px;">Find players of similar skill level to play with !</p>
+  <div class="parent-container">
+    <img class="img1" src="https://cdn-icons-png.flaticon.com/512/16272/16272337.png">
+  <img class="img1" src="https://cdn-icons-png.flaticon.com/512/16272/16272279.png">
+  <div class="parent-container">
+  <button id="play">Match and play</button></div>
+   </div>
+   <hr style="height: 3px; background-color: rgb(83, 0, 161);">
+  
+</section>
+    <!-- Sports List Section -->
+    <section class="sports-list">
+        <h2>Popular Sports</h2>
+        <div class="sports-grid">
+            <div class="sport-item">Basketball</div>
+            <div class="sport-item">Soccer</div>
+            <div class="sport-item">Tennis</div>
+            <div class="sport-item">Badminton</div>
+            <div class="sport-item">Volleyball</div>
+            <div class="sport-item">Cricket</div>
+        </div>
+    </section>
+    
+ <!-- Chat Functionality Section -->
+<section id="chat">
+  <h2>Chat with Your Team</h2>
+  <p>Discuss match details with your teammates.</p>
+  <button class="chat-button">Enter Chat Room</button>
+</section>
+
+
+<hr style="height: 3px; background-color: rgb(83, 0, 161);">
+<!-- Geolocation and Stadium Finder Section -->
+<section id="geolocation">
+  <h2 class="geo">Find Nearby Stadiums</h2>
+  <div id="map">
+      <!-- Placeholder for Google Maps integration -->
+      <p>Map will show here...</p>
+  </div>
+
+   <!-- Scheduling Section -->
+   <section id="scheduling">
+    <h2>Real-Time Scheduling and Availability</h2>
+    <form>
+        <label for="availability">Your Availability:</label>
+        <input type="text" id="availability" placeholder="Enter available dates/times">
+        <button type="submit">Find Common Slots</button>
+    </form>
+</section>
+
+</section>
+    <!-- Other Sports Section -->
+    <section class="other-sports">
+        <h2>Other Sports</h2>
+        <p>If your sport isn't listed in the popular sports, feel free to explore or suggest other sports.</p>
+        <div class="other-sports-form">
+            <input type="text" placeholder="Enter your sport..." />
+            <button class="submit" onclick="
+            const button=document.querySelector('.submit')
+            if(button.innerText==='submit'){
+                button.innerHTML='submitted';
+            }
+            else{
+                button.innerHTML='submit';
+            }">Submit</button>
+        </div>
+    </section>
+<hr style="height: 3px; background-color: rgb(83, 0, 161);">
+  
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-grid">
+            <div class="step-item">
+                <h3>1. Create an Account</h3>
+                <p>Sign up to become part of the community and find others nearby.</p>
+            </div>
+            <div class="step-item">
+                <h3>2. Choose Your Sport</h3>
+                <p>Select your favorite sport to find players near you.</p>
+            </div>
+            <div class="step-item">
+                <h3>3. Connect and Play</h3>
+                <p>Connect with others, find nearby stadiums, and play together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Join the sportX Community Today</h2>
+        <p>Whether you're a casual player or a seasoned athlete, sportX helps you connect with sports enthusiasts around you.</p>
+        <button class="join-now" >Join Now</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 sportX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
