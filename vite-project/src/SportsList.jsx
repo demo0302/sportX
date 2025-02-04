@@ -1,4 +1,5 @@
 import "./style.css";
+import "./style2.css";
 function SportsList() {
   return (
     <section className="sports-list">

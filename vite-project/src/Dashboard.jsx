@@ -7,6 +7,7 @@ import Scheduling from "./Scheduling";
 import OtherSports from "./OtherSports";
 import Footer from "./Footer";
 import Done from "./Done";
+import "./style2.css";
 import CallToAction from "./CallToAction";
 function Dashboard({ user }) {
   return (

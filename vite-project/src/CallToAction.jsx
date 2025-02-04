@@ -1,4 +1,5 @@
 import "./style.css";
+import "./style2.css";
 function CallToAction() {
   return (
     <section className="cta-section">

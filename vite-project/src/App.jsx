@@ -7,6 +7,7 @@ import Login from "./component/Login";
 import Register from "./component/Register";
 import { auth } from "./component/firebase";
 import "./App.css";
+import "./style2.css";
 import "./index.css";
 
 function App() {

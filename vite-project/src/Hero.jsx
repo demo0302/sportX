@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 import HowItWorks from "./HowItWorks";
 import CallToAction from "./CallToAction";
-
+import "./style2.css";
 function Hero({ user }) {
   const navigate = useNavigate();
 

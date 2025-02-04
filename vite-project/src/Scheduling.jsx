@@ -1,4 +1,5 @@
 import "./style.css";
+import "./style2.css";
 function Scheduling() {
   return (
     <section id="scheduling">

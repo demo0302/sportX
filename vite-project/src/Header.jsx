@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";  // Import Link for navigation
 import "./style.css";
-import logoImage from "./assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.webp"; 
+import logoImage from "./assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png"; 
 import sideimg from "./assets/boy.png";
 import { auth } from './component/firebase'; // Adjust the import based on your file structure
 import "./App.css";
 import "./index.css";
-
+import "./style2.css";
 function Header({ user }) {
   const handleLogout = () => {
     auth.signOut(); // Sign out the user

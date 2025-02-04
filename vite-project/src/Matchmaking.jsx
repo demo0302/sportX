@@ -1,5 +1,5 @@
 import "./style.css";
-
+import "./style2.css";
 function Matchmaking() {
   return (
     <section id="matchmaking">

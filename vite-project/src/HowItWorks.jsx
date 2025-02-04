@@ -1,4 +1,5 @@
 import "./style.css";
+import "./style2.css";
 function HowItWorks() {
   return (
     <section className="how-it-works">
