@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background: #f3f3f3;
+  padding: 20px;
+  margin: 50px auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.chat-box {
+  border: 1px solid #ddd;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: gray;
+}
+.username-container {
+  text-align: center;
+  padding: 20px;
+  margin: 50px auto;
+  background: #f3f3f3;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.username-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.username-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.username-container button:hover {
+  background-color: #45a049;
+}
