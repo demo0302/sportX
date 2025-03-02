@@ -1,7 +1,7 @@
 import React from "react";
 import logoImage from "../../assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png"; 
 import { Link } from "react-router-dom";
-import NearbyStadiums from "../components/NearbyStadiums.jsx";
+import Map from "../components/Map.jsx";
 
 const Dashboard = () => {
   return (
@@ -104,7 +104,7 @@ onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
       {/* Nearby Stadiums Section */}
       <section className="container mx-auto py-12">
       <div className="min-h-screen bg-gray-100">
-      <NearbyStadiums />
+      <Map />
     </div>
       </section>
 
