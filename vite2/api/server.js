@@ -46,32 +46,10 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
+
+
 httpServer.listen(PORT, () => {
 	console.log("Server started at this port:" + PORT);
 	connectDB();
 });
 
-import axios from "axios";
-
-// Add this route before the production static file serving
-app.get("/api/stadiums", async (req, res) => {
-  try {
-    const { lat, lng } = req.query;
-    const radius = 5000; // 5km radius
-    const url = `https://overpass-api.de/api/interpreter?data=[out:json];node[leisure=stadium](around:${radius},${lat},${lng});out;`;
-
-    const response = await axios.get(url);
-    const stadiums = response.data.elements.map((element) => ({
-      id: element.id,
-      name: element.tags.name || "Unnamed Stadium",
-      lat: element.lat,
-      lng: element.lon,
-      address: element.tags["addr:full"] || "Address not available",
-    }));
-
-    res.json(stadiums);
-  } catch (error) {
-    console.error("Error fetching stadiums:", error);
-    res.status(500).json({ error: "Failed to fetch stadiums" });
-  }
-});
