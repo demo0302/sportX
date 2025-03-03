@@ -50,9 +50,9 @@ onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
             marginTop: '0px',
             height: '88vh',
           }} className="bg-purple-600 text-white py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4">Connect, Play, and Enjoy Your Favorite Sport</h1>
+        <h1 className="text-4xl font-bold mb-4 ">Connect, Play, and Enjoy Your Favorite Sport</h1>
 
-        <p className="text-lg mb-6">Find players of similar skill level near you.</p>
+        <p className="text-lg mb-6 ">Find players of similar skill level near you.</p>
         <button className="bg-white text-purple-800 px-8 py-3 rounded-lg font-semibold hover:bg-purple-100 transition-colors duration-300">
           Get Started
         </button>
@@ -74,8 +74,8 @@ onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
       </section>
 
       {/* Chat Section */}
-      <section  className="mb-6">
-      <hr className="my-4 h-1 bg-purple-600" />
+      <section  className="mb-0">
+      <hr className="my-4 h-1 bg-purple-400" />
           <h2 className="text-2xl font-bold text-center mb-2">Game Connect!!!!</h2>
           <p className="flex justify-center text-sm text-purple-900 font-bold mb-6">
             Find players of similar skill level to play with!
@@ -97,13 +97,13 @@ onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
             Enter chatroom
           </Link>
           </div>
-          <hr className="my-4 h-1 bg-purple-600" />
+          <hr className=" mb-0 my-4 h-1 bg-purple-400" />
         </section>
 
 
       {/* Nearby Stadiums Section */}
-      <section className="container mx-auto py-12">
-      <div className="min-h-screen bg-gray-100">
+      <section className="container mx-auto py-12 mt-0">
+      <div className="min-h-screen bg-gray-100 mb-0">
       <Map />
     </div>
       </section>
