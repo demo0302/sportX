@@ -179,7 +179,7 @@ export default function Map() {
 
   return (
     
-    <div className="flex flex-col items-center justify-center space-y-4 p-4 bg-gray-100 min-h-screen">
+    <div className="flex flex-col items-center justify-center space-y-4 p-4 bg-purple-100 min-h-screen">
       <h1 className='mt-1 pt-1 text-center text-3xl font-extrabold text-purple-800'>Nearby Stadium</h1>
       {loading && <p className="text-lg font-semibold text-pink-500">Loading location...</p>}
       <div className="flex space-x-4">

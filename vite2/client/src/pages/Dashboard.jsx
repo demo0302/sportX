@@ -2,12 +2,14 @@ import React from "react";
 import logoImage from "../../assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png"; 
 import { Link } from "react-router-dom";
 import Map from "../components/Map.jsx";
+import SchedulingSection from "../components/schedulingSection.jsx";
+import TeamFormation from "../components/TeamFormation.jsx";
 
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className=" sticky top-0 bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-4 " >
+      <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
         <div style={{
   height: '55px',
@@ -102,11 +104,19 @@ onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
 
 
       {/* Nearby Stadiums Section */}
-      <section className="container mx-auto py-12 mt-0">
-      <div className="min-h-screen bg-gray-100 mb-0">
-      <Map />
-    </div>
-      </section>
+      <section className="container mx-auto py-12 mt-0 relative z-10">
+  <div className="bg-purple-200 p-4 rounded-lg shadow-md">
+    <Map />
+  </div>
+</section>
+
+
+<section><div>
+  <SchedulingSection/></div></section>
+
+  <section className="mt-10 mb-20">
+    <div><TeamFormation/></div>
+  </section>
 
       {/* Other Sports Section */}
       <section className="bg-purple-100 py-12">
