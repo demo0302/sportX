@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Image from "../assets/collage-several-athletes-playing-different-sports_978521-37145.avif";
 import logoImage from "../assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png";
 import Map from "../components/Map.jsx";
-import SchedulingSection from "../components/schedulingSection.jsx";
+import SchedulingSection from "../components/SchedulingSection.jsx";
 import PopularSports from "../components/PopularSports.jsx";
 import TeamFormation from "../components/TeamFormation.jsx";
 import ScheduledGames from "../ScheduledGames.jsx";
