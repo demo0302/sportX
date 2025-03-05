@@ -1,8 +1,8 @@
-import footballImg from "../../assets/football.jpg";
-import basketballImg from "../../assets/basketball.jpg";
-import cricketImg from "../../assets/cricket.jpg";
+import footballImg from "../assets/football.jpg";
+import basketballImg from "../assets/basketball.jpg";
+import cricketImg from "../assets/cricket.jpg";
 
-const popularSports = [
+const popularSports = [ 
   { name: "Football", image: footballImg },
   { name: "Basketball", image: basketballImg },
   { name: "Cricket", image: cricketImg }
