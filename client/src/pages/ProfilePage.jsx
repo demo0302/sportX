@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import React from "react";
 import { Header } from "../components/Header";
 import { useAuthStore } from "../store/useAuthStore";
 import { useUserStore } from "../store/useUserStore";
