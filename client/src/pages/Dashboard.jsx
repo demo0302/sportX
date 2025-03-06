@@ -151,6 +151,21 @@ const Dashboard = () => {
         <SuggestSport />
       </section>
 
+      <section ref={sectionRefs.CallToAction} className="bg-purple-400 text-white py-20 text-center">
+  <h2 className="text-3xl font-bold mb-4">Join the SportX Community Today</h2>
+  <p className="text-xl mb-6">
+    Whether you're a casual player or a seasoned athlete, SportX helps you connect with sports enthusiasts around you.
+  </p>
+  <div className="mt-4">
+    <a href="https://discord.gg/AWpEt2VB" target="_blank" rel="noopener noreferrer">
+      <button className="bg-purple-600 hover:bg-purple-800 text-white px-4 py-2 rounded-xl">
+        Join Now
+      </button>
+    </a>
+  </div>
+</section>
+
+
       {/* Footer */}
       <footer className="bg-purple-500 text-white py-6 text-center">
         <p>&copy; 2024 SportX. All rights reserved.</p>
