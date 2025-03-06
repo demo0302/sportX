@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logoImage from "../assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png";
 
-const Header2 = () => {
+const Header2 = ({ scrollToSection, sectionRefs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -41,9 +41,12 @@ const Header2 = () => {
           <ul className="flex flex-col md:flex-row md:space-x-4 text-center md:text-left">
             {["Home", "Sports", "Chat", "Scheduling", "Team Formation", "Stadiums", "Teams List", "Other"].map((item, index) => (
               <li key={index} className="py-2 md:py-0">
-                <Link to={`/${item.toLowerCase().replace(/ /g, "-")}`} className="text-lg font-bold hover:text-purple-300 block px-4">
+                <button
+                  onClick={() => sectionRefs[item] && scrollToSection(sectionRefs[item])}
+                  className="text-lg font-bold hover:text-purple-300 block px-4"
+                >
                   {item}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
