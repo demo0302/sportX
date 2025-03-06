@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Header2 from "../components/Header2.jsx";
 import { Link } from "react-router-dom";
 import Image from "../assets/collage-several-athletes-playing-different-sports_978521-37145.avif";
 import logoImage from "../assets/human-athlete-motion-who-crosses-finish-line-breaks-ribbon-isolated-logo-vector-254768697.png";
@@ -35,83 +36,38 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-purple-100">
+    <div className="min-h-screen bg-purple-100 overflow-hidden ">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-500 to-indigo-800 text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div
-            style={{
-              height: "55px",
-              width: "55px",
-              WebkitTextStroke: "2px black solid",
-              borderRadius: "30px",
-              cursor: "pointer",
-              marginTop: "6px",
-              transition: "transform 1s ease-in-out",
-            }}
-            className="logox mr-2"
-            onMouseOver={(e) => (e.currentTarget.style.transform = "rotate(360deg)")}
-            onMouseOut={(e) => (e.currentTarget.style.transform = "rotate(0deg)")}
-          >
-            <img src={logoImage} alt="SportX Logo" className="h-full w-full rounded-full" />
-          </div>
-
-          <div className="text-3xl font-bold">SportX</div>
-          <nav>
-            <ul className="flex space-x-4 ml-4 ">
-              <li>
-                <button onClick={() => scrollToSection(homeRef)} className="text-lg font-bold hover:text-purple-300 ml-4">
-                  Home
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(popularSportsRef)} className="text-lg font-bold hover:text-purple-300">
-                   Sports
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(chatRef)} className="text-lg font-bold hover:text-purple-300">
-                  Chat
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(schedulingRef)} className="text-lg font-bold hover:text-purple-300">
-                  Scheduling
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(teamFormationRef)} className="text-lg font-bold hover:text-purple-300">
-                  Team Formation
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(stadiumsRef)} className="text-lg font-bold hover:text-purple-300">
-                  Stadiums
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(teamsListRef)} className="text-lg font-bold hover:text-purple-300">
-                  Teams List
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection(suggestSportRef)} className="text-lg font-bold hover:text-purple-300">
-                  Other
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+<Header2/>
 
       {/* Hero Section */}
-      <section ref={homeRef} style={{ backgroundImage: `url(${Image})`, backgroundSize: "cover", backgroundPosition: "center", padding: "40px", color: "white", textAlign: "center", height: "88vh" }} className="bg-purple-600 text-white py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4 pt-27 mt-9">Connect, Play, and Enjoy Your Favorite Sport</h1>
-        <p className="text-xl mb-6">Find players of similar skill level near you.</p>
-        <button onClick={() => setShowWheel(true)} className="bg-white text-purple-800 px-8 py-3 rounded-xl font-semibold hover:bg-purple-100 transition-colors duration-300">
-          Spin & Play
-        </button>
-      </section>
+      <section
+  ref={homeRef}
+  style={{
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "40px",
+    color: "white",
+    height: "88vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center", // Centers content vertically
+    textAlign: "center",
+  }}
+  className="bg-purple-600 text-white"
+>
+  <h1 className="text-4xl font-bold mb-4">Connect, Play, and Enjoy Your Favorite Sport</h1>
+  <p className="text-xl mb-6">Find players of similar skill level near you.</p>
+  <button
+    onClick={() => setShowWheel(true)}
+    className="bg-white text-purple-800 px-8 py-3 rounded-xl font-semibold hover:bg-purple-100 transition-colors duration-300"
+  >
+    Spin & Play
+  </button>
+</section>
+
 
       {/* Render Spinning Wheel Modal */}
       {showWheel && (
